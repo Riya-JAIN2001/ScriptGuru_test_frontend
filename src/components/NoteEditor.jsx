@@ -37,7 +37,7 @@ function NoteEditor() {
     if (saveTimeout.current) clearTimeout(saveTimeout.current);
     saveTimeout.current = setTimeout(() => {
       axios.put(`https://scriptguru-test-backend.onrender.com/notes/${id}`, { content: newContent });
-    }, 5000);
+    }, 2000);
   };
 
   return (
